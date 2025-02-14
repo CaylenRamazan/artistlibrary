@@ -1,0 +1,330 @@
+/*main css*/
+
+body{
+    background-color: rgb(180, 180, 180);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0; 
+    width: 100%; 
+}
+
+/* dev.php css */
+
+#devdiv{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vh;
+}
+
+.cruddiv{
+    width: 50%;
+    border-color: green;
+    border-width: 5px;
+    text-align: center;
+}
+
+.cruddiv table{
+    font-size: 90%;
+    width: 90%;
+}
+.cruddiv th, td{
+    text-align: center;
+    padding: 2%;
+    border-style: solid;
+}
+
+.cruddiv a{
+    text-decoration: none;
+}
+
+.button-add{
+    background-color: blue;
+    border-radius: 5px;
+    color: black;
+    padding: 9%;
+}
+
+.button-delete{
+    background-color: red;
+    border-radius: 5px;
+    color: black;
+    padding: 5%;
+}
+
+
+/* artist.php en songs.php css */
+h1 {
+    text-align: center;
+    color: #444;
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+
+.information {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 10vh;
+}
+
+.infromation_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.infromation_table th { 
+    text-align: center;
+    padding: 0.5vw;
+    font-size: 2vw;
+}
+
+.infromation_table td {
+    padding: 10px;
+    font-size: 1.3vw;
+}
+
+.infromation_table tr{
+    transition: background-color 0.3s ease;
+}
+
+.infromation_table tr:hover {
+    background-color: #d5d2d2; 
+}
+
+.button-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; 
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-more:hover {
+    background-color: #0056b3; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    border-radius: 0.5vw;
+    margin-bottom: 1vh;
+    width: 30%;
+}
+
+.filter_div{
+    display: flex;
+    justify-content: center;
+}
+
+.sort_select{
+    width: 9vw;
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+}
+
+.filter button{
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+}
+
+.search_bar{
+    width: 15vw;
+    border-radius: 1vw;
+    border: none;
+}
+
+
+
+/*nav css*/
+nav {
+    display: flex;          
+    justify-content: center; 
+    align-items: center;  
+    height: 60px;            
+    background-color: #f0f0f0; 
+    margin: 0;
+    z-index: 2000;
+    position: fixed;         /* Zorgt ervoor dat de nav vaststaat op het scherm */
+    bottom: 0;               /* Plaatst de nav aan de onderkant */
+    left: 0;                 /* Zorgt dat de nav aan de linkerkant begint */
+    width: 100%;
+}
+
+nav ul {
+    display: flex;          
+    list-style: none;        
+    margin: 0;               
+    padding: 0;              
+}
+
+nav ul li {
+    margin: 0 15px;         
+}
+
+nav ul li a {
+    text-decoration: none;  
+    color: #333;            
+    font-size: 1.5rem;  
+    margin-left: 2vw;
+    margin-right: 2vw;     
+}
+
+/* artist_details css */
+
+.artist_songs {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 10vh;
+}
+
+.artist_songs h2{
+    text-align: center;
+    font-size: 3vw;
+}
+
+.artist_songs_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.artist_songs_table th { 
+    text-align: center;
+    padding: 0.5vw;
+    font-size: 2vw;
+}
+
+.artist_songs_table td {
+    padding: 10px;
+    font-size: 1.3vw;
+}
+
+.artist_songs_table tr{
+    transition: background-color 0.3s ease;
+}
+
+.artist_songs_table tr:hover {
+    background-color: #d5d2d2; 
+}
+
+.song_count{
+    background-color: #fff;
+    border-radius: 0.5vw;
+    margin-right: 17%;
+}
+
+.song_count h1{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.song_count p{
+    font-size: 5vw;
+    text-align: center;
+}
+.artist_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3vh;
+    gap: 1vw;
+}
+
+.artist_info_links{
+    display: grid;
+    margin-left: 17%;
+    text-align: center;
+    gap: 1vw;
+}
+
+.artist_info_links p{
+    background-color: #fff;
+    border-radius: 0.5vw;
+    font-size: 2.5vw;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* album_details css */
+
+.album_page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+
+.album_info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    height: 25vh;
+    gap: 2vh;
+}
+.album_info a{
+    text-decoration: none;
+    color: black;
+}
+.album_info p{
+    background-color: #fff;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    margin: 0;
+    width: 80%;
+    border-radius: 1.5vh;
+    font-size: 3vh;
+}
+
+.song_list{
+    background-color: #fff;
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    border-radius: 1.5vh;
+    margin-right: 1.5vw;
+    margin-bottom: 10vh;
+}
+.song_list h2{
+    font-size: 2vw;
+}
+
+
+.song_list li{
+    border-color: #333;
+    border-bottom: solid;
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
