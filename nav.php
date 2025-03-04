@@ -11,7 +11,7 @@
         <ul>
             <li><a href="songs.php"><i class="fa-solid fa-music"></i></a></li>
             <li><a href="artists.php"><i class="fa-solid fa-user"></i></a></li>
-            <li><a href="artist_library-home.php"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="index.php"><i class="fa-solid fa-house"></i></a></li>
             <li><a href="albums.php"><i class="fa-solid fa-record-vinyl"></i></a></li>
             <li><a href="CRUD/dev.php"><i class="fas fa-server"></i></a></li>
         </ul>
